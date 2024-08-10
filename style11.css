@@ -183,19 +183,19 @@ p{
 }
 
 .card1 {
-    background-image: url(image/30.JPG);
+    background-image: url(image/30.jpg);
 }
 
 .card2 {
-    background-image: url(image/31.JPG);
+    background-image: url(image/31.jpg);
 }
 
 .card3 {
-    background-image: url(image/34.JPG);
+    background-image: url(image/34.jpg);
 }
 
 .card4 {
-    background-image: url(image/28.JPG);
+    background-image: url(image/28.jpg);
 }
 
 .card:hover{
