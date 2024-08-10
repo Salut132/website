@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <a href="index.html" class="logo">MG</a>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Furnitures.html">Chairs & Tables</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class='bx bx-x'></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class='bx bx-menu'></i></span></label>
+            </ul>
+        </nav>
+    </header>
+    <div class="heading">
+        <h1>About Us</h1>
+    </div>
+    <div class="content">
+        <section class="about">
+            <div class="about-image">
+                <img src="image/live.jpg">
+            </div>
+            <div class="about-content">
+                <b><h4>LIVE SIMPLE</h4></b>
+                <p>This company slogan reflects our proud past and our desire for the future. This is the spirit that drives us in everything that we do. From design through fulfillment, we continuously strive to provide the best product at the best prices accompanied by the best service in the industry. Being the best and bringing the best to you is our relentless pursuit.
+                    <br>
+                    <br>
+                    We have qualified designers in charge for developing new products, strongly following the latest furniture trend in market. In order to control our product quality, every stage of production is under the supervision of skilled professionals who strictly control the whole production procedures and the raw material selection and purchase. These constant processes allow GM to offer products with long existence.
+                    <br>
+                    <br>
+                    Working with GM SC is your right choice due to our stable and good quality, competitive price, on time shipment and wonderful and skilled sales service!
+                </p>
+            </div>
+        </section>
+    </div>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="container">
+            <div class="row-down">
+                <div class="info">
+                    <h4>Our Vision</h4>
+                    <br>
+                    <p>MG thrives to help people live better lives through the concept <br> “Live Simple”, by providing quality furniture at the <br> most affordable price possible, so that as much people <br> as possible could afford to own them.</p>
+                </div>
+                <div class="info">
+                    <h4>Our Mission</h4>
+                    <br>
+                    <ul>
+                        <li>Manufacture and Supply a <br> wide range of quality furniture;</li>
+                        <li>Consistently develop <br> high-quality operations through;</li>
+                        <li>To be an industry leader <br> in sales growth and <br> profitability performance;</li>
+                        <li>Providing an outstanding investment <br> for our shareholders, employees, <br> customers, suppliers and community;</li>
+                        <li>To promote the relationship-focused, <br> team-oriented and honor-driven <br> corporate culture;</li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="info">
+                    <h4>Our Values</h4>
+                    <br>
+                    <ul>
+                        <li>Value for quality;</li>
+                        <li>Pursuit of Customer Satisfaction;</li>
+                        <li>Responsibility to Shareholders;</li>
+                        <li>Value for company employee;</li>
+                        <li>Contribution to Society;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Properties</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Furnitures.html">Chairs & Tables</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!---- 2nd colum ----->
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Delvery</a></li>
+                        <li><a href="#">Order</a></li>
+                        <li><a href="#">Restor</a></li>
+                    </ul>
+                </div>
+                <!-- 3rd colum -->
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <form action="">
+                        <input type="text" placeholder="Your Name" class="inputName">
+                        <input type="text" placeholder="Enter your Email" class="inputEmail">
+                        <input type="submit" value="submit" class="inputsubmit">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <p>&#169; 2024 GM Furniture. All Rights Reserved.</p>
+                </div>
+                <div class="socialIcons">
+                    <a href="http://t.me/a_ma_nu_132"><i class='bx bxl-facebook'></i></a>
+            <a href="http://youtube.com/@amanu1324"><i class='bx bxl-linkedin' ></i></a>
+            <a href="http://tiktok.com/@a_ma_nu_132"><i class='bx bx-rss'></i></a>
+            <a href="http://instagram.com/a_ma_nu_132"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        
+        const body = document.body;
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset
+
+            if (currentScroll <= 0) {
+                body.classList.remove("scroll-up")
+            }
+
+            if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+                body.classList.remove("scroll-up")
+                body.classList.add("scroll-down")
+            }
+
+            if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+                body.classList.remove("scroll-down")
+                body.classList.add("scroll-up")
+            }
+
+
+            lastScroll = currentScroll;
+        })
+
+    </script>
+</body>
+</html>
